@@ -12,3 +12,16 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+
+
+const list = document.querySelector(`ul`);
+
+const markup = images.map((image) => `<li><img src=${image.url} alt=${image.alt}></li>`);
+list.insertAdjacentHTML('beforeend', markup);
+
+const imgBox = document.querySelectorAll(`img`)
+imgBox.forEach(elem=>elem.classList.toggle(`image-box`))
+
+const itemBox= document.querySelectorAll(`li`)
+itemBox.forEach(elem=>elem.classList.toggle(`item-box`))
