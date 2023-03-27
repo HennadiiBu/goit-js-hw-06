@@ -15,4 +15,5 @@ function onSub(event) {
     };
 
     console.log(result)
+    form.reset()
 }
