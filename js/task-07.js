@@ -1,6 +1,6 @@
 const inputKey = document.querySelector('#font-size-control');
 const text = document.querySelector('#text');
-console.dir(text.style)
+text.style.fontSize=Number(inputKey.value)+`px`
 inputKey.addEventListener('input', onInput);
 
 function onInput() {
